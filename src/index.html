@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>TickyTick</title>
@@ -9,7 +10,34 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
+  <header id="titlebar">
+    <div id="drag-region">
+      <div id="window-title">
+        <span>TickyTick</span>
+        </h1>
+        <div id="window-controls">
+          <button id="min-button">
+            <span>&#xE921;</span>
+          </button>
+          <button id="max-button">
+            <span>&#xE922;</span>
+          </button>
+          <button id="restore-button">
+            <span>&#xE923;</span>
+          </button>
+          <button id="close-button">
+            <span>&#xE8BB;</span>
+          </button>
+        </div>
+      </div>
+  </header>
   <app-root></app-root>
+
+  <script>
+    require('./assets/renderer.js')
+  </script>
 </body>
+
 </html>

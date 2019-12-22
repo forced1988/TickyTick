@@ -1,7 +1,7 @@
 {
   "name": "ticky-tick",
   "version": "0.0.0",
-  "main": "main.ts",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
