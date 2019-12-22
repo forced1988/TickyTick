@@ -36,7 +36,10 @@
   <app-root></app-root>
 
   <script>
-    require('./assets/renderer.js')
+    if (typeof(process) !== 'undefined' && typeof (process.versions.electron) === 'string') {
+      document.getElementById('titlebar').style.display = "flex";
+      require('./assets/renderer.js')
+    }
   </script>
 </body>
 
